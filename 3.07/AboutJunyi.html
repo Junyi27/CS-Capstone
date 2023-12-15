@@ -52,6 +52,27 @@
     <li>If I could live anywhere in the world it will be China</li>
     <li>If I had to eat one food for the rest of your life it will be instant noodle</li>
   </ul> </p>
+  <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+  style="background-color:#2d9cf1;width:140px;height:60px;padding:6px; margin: -400px 50px 75px 400px; ">
+  Mouse Over Me</div>
+
+  <script>
+  function mOver(obj) {
+    obj.innerHTML = "Thank You"
+  }
+
+  function mOut(obj) {
+    obj.innerHTML = "Mouse Over Me"
+  }
+  </script>
+
+<button style="margin: -100px 50px 75px 400px;";type="button" onclick="myFunction()">Change background color</button>
+
+<script>
+function myFunction() {
+  document.body.style.backgroundColor = "lightblue";
+}
+</script>
   
 
 </body>
